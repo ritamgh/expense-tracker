@@ -1,0 +1,114 @@
+/* General settings */
+.root {
+  -fx-font-family: "Segoe UI", Arial, sans-serif;
+  -fx-background-color: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+  -fx-padding: 20px;
+}
+
+/* Headings (Labels) - Only the headings are red */
+.label {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #333333; /* Dark Gray for a balanced contrast */
+}
+
+/* Buttons */
+.button {
+  -fx-background-color: #6c9bcf; /* Soft Blue */
+  -fx-text-fill: white;
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-padding: 10px 20px;
+  -fx-border-radius: 8px;
+  -fx-effect: dropshadow(
+    gaussian,
+    rgba(0, 0, 0, 0.15),
+    5,
+    0.5,
+    0,
+    0
+  ); /* Subtle shadow for depth */
+  -fx-cursor: hand;
+  -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+  -fx-background-color: #4caf50; /* Soft Green on hover */
+}
+
+/* Input Fields */
+.text-field,
+.combo-box,
+.date-picker {
+  -fx-pref-width: 250px;
+  -fx-font-size: 14px;
+  -fx-padding: 8px;
+  -fx-border-color: lightgray;
+  -fx-border-radius: 6px;
+  -fx-background-radius: 6px;
+  -fx-background-color: white;
+  -fx-effect: dropshadow(
+    gaussian,
+    rgba(0, 0, 0, 0.05),
+    5,
+    0.5,
+    0,
+    0
+  ); /* Soft shadow */
+}
+
+.text-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+  -fx-border-color: #6c9bcf; /* Soft Blue */
+  -fx-border-width: 2px;
+}
+
+/* Table View */
+.table-view {
+  -fx-background-color: white;
+  -fx-border-radius: 8px;
+  -fx-effect: dropshadow(
+    gaussian,
+    rgba(0, 0, 0, 0.05),
+    5,
+    0.5,
+    0,
+    0
+  ); /* Subtle shadow */
+  -fx-font-size: 14px;
+}
+
+/* Table Column Header */
+.table-column {
+  -fx-background-color: #6c9bcf; /* Soft Blue for table headers */
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+}
+
+/* Table Rows - Keep them simple with no special color */
+.table-row-cell:filled {
+  -fx-background-color: white; /* Simple white row background */
+  -fx-border-color: lightgray;
+}
+
+.table-row-cell:selected {
+  -fx-background-color: white; /* No color change for selected rows */
+  -fx-text-fill: black; /* Ensure text remains readable */
+}
+
+/* Filter/Search Bar */
+.search-bar {
+  -fx-padding: 8px;
+  -fx-background-color: white;
+  -fx-border-color: lightgray;
+  -fx-border-radius: 6px;
+  -fx-effect: dropshadow(
+    gaussian,
+    rgba(0, 0, 0, 0.05),
+    5,
+    0.5,
+    0,
+    0
+  ); /* Subtle shadow */
+}
